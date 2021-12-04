@@ -1,0 +1,57 @@
+.jobs-center {
+    width: 80vw;
+    margin: 0 auto;
+    max-width: var(--max-width);
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+  }
+  .job-btn {
+    background: transparent;
+    border-color: transparent;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    letter-spacing: var(--spacing);
+    margin: 0 0.5rem;
+    transition: var(--transition);
+    cursor: pointer;
+    padding: 0.25rem 0;
+    line-height: 1;
+    outline-color: var(--clr-primary-10);
+  }
+  .job-btn:hover {
+    color: var(--clr-primary-5);
+    box-shadow: 0 2px var(--clr-primary-5);
+  }
+  .active-btn {
+    color: var(--clr-primary-5);
+    box-shadow: 0 2px var(--clr-primary-5);
+  }
+  .job-icon {
+    color: var(--clr-primary-5);
+  }
+  @media screen and (min-width: 992px) {
+    .jobs-center {
+      width: 90vw;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      column-gap: 4rem;
+    }
+    .btn-container {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .job-btn {
+      margin-bottom: 1rem;
+    }
+    .active-btn {
+      box-shadow: -2px 0 var(--clr-primary-5);
+    }
+    .job-btn:hover {
+      box-shadow: -2px 0 var(--clr-primary-5);
+    }
+  }
